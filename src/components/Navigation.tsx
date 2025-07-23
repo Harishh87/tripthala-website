@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
-import navLogoImage from '@/assets/tripthala-logo-edited.jpg';
+import navLogoImage from '@/assets/tripthala-logo.jpg';
 import { Button } from '@/components/ui/button';
 import {
   NavigationMenu,
