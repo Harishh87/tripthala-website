@@ -55,7 +55,7 @@ const Home = () => {
               </span>
             </h1>
             <p className="text-xl md:text-2xl font-light leading-relaxed max-w-6xl mx-auto mb-8">
-              From the hills of Himachal… to the cafés of Croatia… to the deserts of Morocco…<br />
+              From the hills of Rewari and Bahadurgarh… to the cafés of Croatia… to the deserts of Morocco…<br />
               <span className="font-semibold">One app. One Tribe. One mission: Let the world travel.</span>
             </p>
             {/* <div className="bg-sunset-orange/90 backdrop-blur-sm rounded-lg p-6 inline-block">

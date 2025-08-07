@@ -12,10 +12,17 @@ import Tribe from "./pages/Tribe";
 import Festivals from "./pages/Festivals";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import { initGA, trackPageView } from "./lib/ga";
+import { useEffect } from "react";
 
 const queryClient = new QueryClient();
 
-const App = () => (
+const App = () => {
+  useEffect(() => {
+    initGA();
+    trackPageView(window.location.pathname);
+  }, []);
+  return (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
@@ -36,6 +43,6 @@ const App = () => (
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
-);
+)};
 
 export default App;
